@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300&family=Caveat+Brush&family=Caveat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Alexandria', sans-serif;
+}
+
+body {
+    background: url('imgs/landing-page.png') no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.div-body {
+    height: 1400px;
+    display: flexbox;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.71);
+    /* border: solid 1px pink; */
+}
+
+.background img{
+    background: url('imgs/landing-page.png') no-repeat;
+    background-size: cover;
+    height: 1140px;
+    position: fixed;
+    z-index:-1;
+    background: no-repeat;
+    background-size: cover;    
+    width: 100%;
+}
+
+.main-body {
+    height: 1055px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Event Info Container */
+.eventsContainer {
+    position: relative;
+    justify-content: center;
+    width: 80%;
+    background-color: rgba(255,255,255,.85);
+    border-radius: 8px;
+    padding: 8vh;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    overflow: auto;
+    /* border: solid 1px green; */
+}
+
+#s1 {
+    margin-top: 100px;
+    height: 900px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.event_name {
+    width: 100%;
+    font-size: 35px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1%;
+}
+
+.event_user {
+    width: 100%;
+    font-size: 35px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1%;
+    margin-top: 10px;
+}
+
+#date {
+    color: gray;
+}
+
+.event_picture img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 180px;  
+    left: 50%;  
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    max-height: 300px;
+}
+
+.event_date {
+    color:rgba(0, 0, 0, 0.822);
+    margin-top: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.event_details {
+    margin-top: -120px;
+    height: 25vh;
+    border-radius: 5px;
+    padding: 2%;
+    text-align: justify;
+}
+
+.event_details p {
+    margin-top: 5px;
+    font-size: 2.4vh;
+    line-height: 100%;
+}

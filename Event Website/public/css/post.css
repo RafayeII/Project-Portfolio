@@ -1,0 +1,254 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Variables */
+.Pattern {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 98%;
+    width: 100%;
+    z-index: -10; /* puts behind everything */
+}
+
+.background img{
+    background: url('imgs/landing-page.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    z-index:-1;
+    background: no-repeat;
+    background-size: cover;    
+    width: 100%;
+}
+
+:root {
+    --container-color: #1a1e21;
+    --second-color: #fd8f44;
+    --text-color: #fff;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.user-post {
+    background-color: rgba(255,255,255,.85);
+    padding: 25px 25px;
+    max-width: 800px;
+    max-height: 400px;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; */
+}
+
+.post-btn {
+    background-color: #15C39A;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 15px;
+    /* border: none; */
+    border-radius: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: transparent;
+    font-size: 90%;
+    opacity: 0.3;
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+    height: 710px;
+    /* border: solid 1px yellow; */
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 10px;
+    width: 1500px;
+}
+
+.group-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+    height: 510px;
+    /* border: solid 1px yellow; */
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 10px;
+    width: 1500px;
+}
+
+
+.post-box {
+    background-color: rgba(255,255,255,.7);
+    /* background: linear-gradient(72.44deg, #FFCDA5 0%, #EE4D5F 100%); */
+    /* background-color: white; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 15px;
+    border-radius: 0.8rem;
+    width: 1000px;
+}
+
+.post-img {
+    width: 100%;
+    height: 156px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+}
+
+.category {
+    font-size: 0.9rem;
+    font-weight: 750;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.post-event {
+    font-size: 1rem;
+    font-weight: 1000;
+    color: #2f4858;
+    
+}
+
+.post-location {
+    font-size: 1rem;
+    font-weight: 1000;
+    color: #2f4858; 
+}
+
+.post-title {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: black;
+}
+
+.post-date {
+    display: flex;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    /* margin-top: 1.5px; */
+}
+
+.post-description {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    margin-top: 20px; 
+    margin-bottom: 20px;   
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 1.5px solid black;
+}
+
+#posting {
+    /* border: solid 1px red; */
+   height: 550px;
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+#s2 {
+    height: 1200px;
+}
+
+.Groupsbutton{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.joingroupbtn{
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #2196f3;
+    background: rgba(161,47,82,.6);
+    border: 1px solid black;
+    border-radius: 15%;
+    width: 160px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: black;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.deletegroupbtn{
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #2196f3;
+    background: red;
+    border: 1px solid black;
+    border-radius: 15%;
+    width: 160px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: black;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.joingroupbtn:hover, .deletegroupbtn:hover{
+   color: white;
+   background: #2196f3;
+   box-shadow: 0 0 10px #2196f3;
+}

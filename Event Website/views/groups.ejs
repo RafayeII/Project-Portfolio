@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Page</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/post.css">
+</head>
+<body>
+<div class="div-body-group">
+    <%- include('header'); -%>
+    <div class="background">
+        <img src="imgs/login-page.png" class="background"/>
+    </div>
+    <div class="main-body-group">
+        <div class="form_page">
+            <div class="user-post-container">
+                <form action="/group" method="post">
+                    <h3>CREATE A GROUP</h3>
+                    <label for="title">Group Name</label>
+                    <input type="text" id="title" name="name" placeholder="What's the group name?" maxlength="45" required>
+                    <div class="dropbox">
+                        <select class="event" name="social" required>
+                            <option value=""> -SOCIAL MEDIA- </option>
+                            <option value="Facebook">FACEBOOK</option>
+                            <option value="Instagram">INSTAGRAM</option>
+                            <option value="Twitter">TWITTER</option>
+                        </select>
+                    </div>
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" placeholder="What's your group about?" maxlength="300" required></textarea>
+                    <label for="description">Join Link</label>
+                    <input type="text" id="title" name="link" placeholder="Format: https://www.<Your Input>" maxlength="100" required>
+                    <button type="submit" id="postBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="section" id="s2">
+            <div class="postContainer">
+                <div class="post-section" id="posting">
+                    <section class="group-container">
+                        <% groups.forEach(function(post){ %>
+                            <div class="GROUPBOX">
+                                <div class="post-box groups join">
+                                    <h2 class="category">Groups</h2>
+                                    <div class="post-title">
+                                        <%= post.name %> [<%= post.social %>] GROUP
+                                    </div>
+                                    
+                                    <p class="post-description"><%= post.description %></p>
+    
+                                    <div class="Groupsbutton">
+                                    <a href="https://www.<%= post.link %>" class="joingroupbtn">Join</a>
+                                    <% if(userLog == post.username){ %>
+                                    <a href="deleteGroup/<%= post.id %>" class="deletegroupbtn">Delete</a>
+                                    <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }); %>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <%- include('footer'); -%>
+</div>
+</body>
+</html>
